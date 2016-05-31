@@ -1,31 +1,18 @@
 import {Component} from '@angular/core';
-import {InputComponent} from './bindings/input.component';
-import {ConfirmComponent} from './bindings/confirm.component';
+import {AttributeDirectives} from './attributes-directives.component';
+import {StructuralDirectives} from './structural-directives.component';
 
-@Component( {
+@Component({
     selector: 'my-app',
     template: `
-        <div class="container">
-            <my-input (submitted)="onSubmit($event)"></my-input>
-        </div>
-        <div class="container">
-            <my-confirm (confirmed)="onConfirm($event)" [myself]="myself"></my-confirm>
-        </div>
+        <my-attribute-directives></my-attribute-directives>
+        <br>
+        <h1>Structural Directives</h1>
+        <my-structural-directives></my-structural-directives>     
     `,
-    directives: [InputComponent, ConfirmComponent]
+    directives: [AttributeDirectives,StructuralDirectives]
 })
 
-export class AppComponent
-{
-    myself = { name: '', age: '' };
-    confirmedMyself = { name: '', age: '' };
+export class AppComponent {
 
-    onSubmit( myself: { name: string, age: string }) {
-        this.myself = myself;
-    }
-
-    onConfirm( myself: { name: string, age: string })
-    {
-        this.confirmedMyself = myself;
-    }
 }
