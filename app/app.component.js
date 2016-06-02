@@ -1,4 +1,4 @@
-System.register(['@angular/core', './attributes-directives.component', './structural-directives.component'], function(exports_1, context_1) {
+System.register(['@angular/core', './shopping-list/shopping-list.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,18 +10,15 @@ System.register(['@angular/core', './attributes-directives.component', './struct
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, attributes_directives_component_1, structural_directives_component_1;
+    var core_1, shopping_list_component_1;
     var AppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (attributes_directives_component_1_1) {
-                attributes_directives_component_1 = attributes_directives_component_1_1;
-            },
-            function (structural_directives_component_1_1) {
-                structural_directives_component_1 = structural_directives_component_1_1;
+            function (shopping_list_component_1_1) {
+                shopping_list_component_1 = shopping_list_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -30,8 +27,8 @@ System.register(['@angular/core', './attributes-directives.component', './struct
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n        <my-attribute-directives></my-attribute-directives>\n        <br>\n        <h1>Structural Directives</h1>\n        <my-structural-directives></my-structural-directives>     \n    ",
-                        directives: [attributes_directives_component_1.AttributeDirectives, structural_directives_component_1.StructuralDirectives]
+                        template: "\n        <header>\n            <div class=\"brand\">Shopping List</div>\n        </header>\n        <div class=\"main\">\n            <shopping-list></shopping-list>\n        </div>  \n    ",
+                        directives: [shopping_list_component_1.ShoppingListComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
@@ -42,4 +39,4 @@ System.register(['@angular/core', './attributes-directives.component', './struct
     }
 });
 
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFlQTtnQkFBQTtnQkFFQSxDQUFDO2dCQWJEO29CQUFDLGdCQUFTLENBQUM7d0JBQ1AsUUFBUSxFQUFFLFFBQVE7d0JBQ2xCLFFBQVEsRUFBRSwrTEFLVDt3QkFDRCxVQUFVLEVBQUUsQ0FBQyxxREFBbUIsRUFBQyxzREFBb0IsQ0FBQztxQkFDekQsQ0FBQzs7Z0NBQUE7Z0JBSUYsbUJBQUM7WUFBRCxDQUZBLEFBRUMsSUFBQTtZQUZELHVDQUVDLENBQUEiLCJmaWxlIjoiYXBwLmNvbXBvbmVudC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7Q29tcG9uZW50fSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7QXR0cmlidXRlRGlyZWN0aXZlc30gZnJvbSAnLi9hdHRyaWJ1dGVzLWRpcmVjdGl2ZXMuY29tcG9uZW50JztcbmltcG9ydCB7U3RydWN0dXJhbERpcmVjdGl2ZXN9IGZyb20gJy4vc3RydWN0dXJhbC1kaXJlY3RpdmVzLmNvbXBvbmVudCc7XG5cbkBDb21wb25lbnQoe1xuICAgIHNlbGVjdG9yOiAnbXktYXBwJyxcbiAgICB0ZW1wbGF0ZTogYFxuICAgICAgICA8bXktYXR0cmlidXRlLWRpcmVjdGl2ZXM+PC9teS1hdHRyaWJ1dGUtZGlyZWN0aXZlcz5cbiAgICAgICAgPGJyPlxuICAgICAgICA8aDE+U3RydWN0dXJhbCBEaXJlY3RpdmVzPC9oMT5cbiAgICAgICAgPG15LXN0cnVjdHVyYWwtZGlyZWN0aXZlcz48L215LXN0cnVjdHVyYWwtZGlyZWN0aXZlcz4gICAgIFxuICAgIGAsXG4gICAgZGlyZWN0aXZlczogW0F0dHJpYnV0ZURpcmVjdGl2ZXMsU3RydWN0dXJhbERpcmVjdGl2ZXNdXG59KVxuXG5leHBvcnQgY2xhc3MgQXBwQ29tcG9uZW50IHtcblxufSJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFnQkE7Z0JBQUE7Z0JBRUEsQ0FBQztnQkFmRDtvQkFBQyxnQkFBUyxDQUFDO3dCQUNQLFFBQVEsRUFBRSxRQUFRO3dCQUNsQixRQUFRLEVBQUUsZ01BT1Q7d0JBQ0QsVUFBVSxFQUFFLENBQUMsK0NBQXFCLENBQUM7cUJBQ3RDLENBQUM7O2dDQUFBO2dCQUlGLG1CQUFDO1lBQUQsQ0FGQSxBQUVDLElBQUE7WUFGRCx1Q0FFQyxDQUFBIiwiZmlsZSI6ImFwcC5jb21wb25lbnQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge0NvbXBvbmVudH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG5pbXBvcnQge1Nob3BwaW5nTGlzdENvbXBvbmVudH0gZnJvbSAnLi9zaG9wcGluZy1saXN0L3Nob3BwaW5nLWxpc3QuY29tcG9uZW50JztcblxuQENvbXBvbmVudCh7XG4gICAgc2VsZWN0b3I6ICdteS1hcHAnLFxuICAgIHRlbXBsYXRlOiBgXG4gICAgICAgIDxoZWFkZXI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwiYnJhbmRcIj5TaG9wcGluZyBMaXN0PC9kaXY+XG4gICAgICAgIDwvaGVhZGVyPlxuICAgICAgICA8ZGl2IGNsYXNzPVwibWFpblwiPlxuICAgICAgICAgICAgPHNob3BwaW5nLWxpc3Q+PC9zaG9wcGluZy1saXN0PlxuICAgICAgICA8L2Rpdj4gIFxuICAgIGAsXG4gICAgZGlyZWN0aXZlczogW1Nob3BwaW5nTGlzdENvbXBvbmVudF1cbn0pXG5cbmV4cG9ydCBjbGFzcyBBcHBDb21wb25lbnQge1xuXG59Il0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9
