@@ -1,16 +1,16 @@
 import {Component} from '@angular/core';
-import {AttributeDirectives} from './attributes-directives.component';
-import {StructuralDirectives} from './structural-directives.component';
+import {Component1Component} from './component1.component';
+import {Component2Component} from './component2.component';
 
-@Component({
+@Component( {
     selector: 'my-app',
     template: `
-        <my-attribute-directives></my-attribute-directives>
-        <br>
-        <h1>Structural Directives</h1>
-        <my-structural-directives></my-structural-directives>     
-    `,
-    directives: [AttributeDirectives,StructuralDirectives]
+    <h1>First component</h1>
+        <component-1></component-1>
+    <h1>Second component</h1>
+        <component-2></component-2>
+      `,
+    directives: [Component1Component, Component2Component]
 })
 
 export class AppComponent {
